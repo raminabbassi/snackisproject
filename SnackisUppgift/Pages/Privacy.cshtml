@@ -1,0 +1,79 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('/Backgroundimages/Chattbild.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: aqua; 
+        }
+
+        .blurry-background::before {
+            content: "";
+            display: block;
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            filter: blur(5px);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="blurry-background">
+    <h1>@ViewData["Title"]</h1>
+    <p>Welcome to our chat site. We value your privacy and are committed to protecting your personal information.</p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+        <li><strong>Personal Data:</strong> Username, email address.</li>
+        <li><strong>Chat Data:</strong> Messages sent and received.</li>
+        <li><strong>Usage Data:</strong> IP address, browser type, and usage patterns.</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <ul>
+        <li>To provide and improve our chat services.</li>
+        <li>To ensure the security and integrity of our site.</li>
+        <li>To communicate with you regarding updates and support.</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>We do not share your personal information with third parties, except:</p>
+    <ul>
+        <li>To comply with legal obligations.</li>
+        <li>To protect our rights and safety.</li>
+    </ul>
+
+    <h2>Data Security</h2>
+    <p>We implement industry-standard measures to protect your data from unauthorized access and breaches.</p>
+
+    <h2>Your Rights</h2>
+    <ul>
+        <li>Access, correct, or delete your personal data.</li>
+        <li>Opt-out of communications.</li>
+    </ul>
+
+    <h2>Rules for Posting</h2>
+    <p>When using our chat services, please adhere to the following rules:</p>
+    <ul>
+        <li>Be respectful and courteous to others.</li>
+        <li>Do not post any offensive, abusive, or inappropriate content.</li>
+        <li>Any form of harassment, hate speech, or discrimination is strictly prohibited.</li>
+        <li>Sharing of personal or sensitive information of others without consent is not allowed.</li>
+        <li>Spam, scams, and advertisements are not permitted.</li>
+    </ul>
+    <p>Violation of these rules may result in the removal of your content and, if necessary, suspension or termination of your account.</p>
+
+    <h2>Contact Us</h2>
+    <p>For any questions or concerns, please contact us at <a href="mailto:privacy@snackis.com">privacy@snackis.com</a>.</p>
+</body>
+</html>
